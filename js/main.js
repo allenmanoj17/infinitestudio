@@ -146,11 +146,11 @@
 
 	};
 
-
+	url = "https://localhost:8080"
 	// Redirect page 
 	var redirectPage = function(url) {
 		
-		window.location = url;
+		window.location.href = url;
 
 	}
 

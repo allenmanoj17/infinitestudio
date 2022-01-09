@@ -535,7 +535,7 @@ p {
 border-radius: 5px;
 }
 #fh5co-about {
-  background: #444853;
+  background: #000000;
 }
 #fh5co-about h2 {
   color: #fff;
@@ -549,7 +549,7 @@ border-radius: 5px;
   }
 }
 #fh5co-about .fh5co-text .fh5co-meta {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.699);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 12px;
@@ -592,7 +592,6 @@ border-radius: 5px;
   right: 0;
   bottom: 0;
   z-index: 3;
-  opacity: 0.7;
   background: #000000;
 }
 #fh5co-testimony .flexslider {
@@ -630,7 +629,7 @@ border-radius: 5px;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.788);
 }
 #fh5co-testimony .flexslider .flex-control-paging {
   position: relative;
@@ -1245,8 +1244,8 @@ strong {
 }
 
 .salesbox-enroll1 {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background: #00000059;
 }
 

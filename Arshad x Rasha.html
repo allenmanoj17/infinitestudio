@@ -74,7 +74,7 @@
 					</div>
 				</div>
 				<ul class="slides">
-					<li style="background-image: url(images/highlights/5.png);" class="lazyload"
+					<li style="background-image: url(images/Webp/highlights/5.webp);" class="lazyload"
 						data-stellar-background-ratio="0.5"></li>
 				</ul>
 
@@ -87,23 +87,23 @@
 				<div class="row">
 				<center>
 					<figure class="animate-box">
-						<img src="images/Muslim/DSC00183.webp" alt="studio infinite weddings"
+						<img src="images/Webp/Muslim/DSC00183.webp" alt="studio infinite weddings"
 							class="img-responsive lazyload">
 					</figure>
 					<figure class="animate-box">
-						<img src="images/Muslim/DSC00185.webp" alt="studio infinite weddings"
+						<img src="images/Webp/Muslim/DSC00185.webp" alt="studio infinite weddings"
 							class="img-responsive lazyload">
 					</figure>
 					<figure class="animate-box">
-						<img src="images/Muslim/DSC00313.webp" alt="studio infinite weddings"
+						<img src="images/Webp/Muslim/DSC00313.webp" alt="studio infinite weddings"
 							class="img-responsive lazyload">
 					</figure>
 					<figure class="animate-box">
-						<img src="images/Muslim/DSC00503.webp" alt="studio infinite weddings"
+						<img src="images/Webp/Muslim/DSC00503.webp" alt="studio infinite weddings"
 							class="img-responsive lazyload">
 					</figure>
 					<figure class="animate-box">
-						<img src="images/Muslim/DSC09865.webp" alt="studio infinite weddings"
+						<img src="images/Webp/Muslim/DSC09865.webp" alt="studio infinite weddings"
 							class="img-responsive lazyload">
 					</figure>
 				</center>
@@ -170,7 +170,16 @@
 			<script src="js/main.js"></script>
 			<script src="js/lazyLoad.js"></script>
 
-
+			<script>
+				window.history.pushState({page: 1}, "", "");
+			
+			window.onpopstate = function(event) {
+				if(event){
+					window.location.href = '/index.html';
+					// Code to handle back button or prevent from navigation
+				}
+			}
+			</script>
 </body>
 
 </html>

@@ -371,26 +371,35 @@
 })();
 
 
-$.Tween.propHooks.number = {
-	get: function(tween) {
-	  var num = tween.elem.innerHTML.replace(/^[^\d-]+/, "");
-	  return parseFloat(num) || 0;
-	},
-  
-	set: function(tween) {
-	  var opts = tween.options;
-	  tween.elem.innerHTML =
-		(opts.prefix || "") +
-		tween.now.toFixed(opts.fixed || 0) +
-		(opts.postfix || "");
-	}
-  };
-  
-  $("#num-1").animate(
-	{ number: 25 },
-	{
-	  duration: 7000,
-	  postfix: "+"
-	}
-  );
-  
+  var a = 0;
+$(window).scroll(function() {
+
+  var oTop = $('#counter').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.counter-value').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 7000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });
+    });
+    a = 1;
+  }
+
+});

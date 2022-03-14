@@ -2146,3 +2146,15 @@ background:rgba(0, 0, 0, 0.9);
 padding: 3px 7px;
 border-radius: 30px;
 }
+
+.fourpack-container{
+  margin-top: 10px;
+  margin-bottom: -105px;
+  padding: 50px;
+}
+@media (min-width:768px)
+{
+  .fourpack-container{
+    padding: 0 140px;
+  }
+}

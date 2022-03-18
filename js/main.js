@@ -27,7 +27,7 @@
 		
 	  	$('#fh5co-home .flexslider').flexslider({
 			animation: "fade",
-			slideshowSpeed: 5000
+			slideshowSpeed: 2500
 	  	});
 
 	  	$('#fh5co-home .flexslider .slides > li').css('height', $(window).height());	
